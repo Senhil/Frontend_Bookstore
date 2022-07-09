@@ -104,6 +104,7 @@ function App() {
 	};
 
 	const handleIncreaseQuantity = async (cartID) => {
+		alert("out of stock")
 		await api.increaseQuantity(cartID);
 		await fetchCart();
 	};
